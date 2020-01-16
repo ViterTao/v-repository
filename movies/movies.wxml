@@ -1,0 +1,15 @@
+<!--pages/movies/movies.wxml-->
+<view class="container">
+ <view class="main">
+ <view class="main_item">
+  <movable-area>
+  <movable-view damping="100" out-of-bounds="true" direction="horizontal" x="{{x}}" animation="false" bindchange="handleMovableChange" capture-bind:touchstart="handleTouchestart" capture-bind:touchend="handleTouchend">
+   <view class="main_item_content ">
+   左滑删除
+   </view>
+  </movable-view>
+  </movable-area>
+  <view class="delete_btn " data-productIndex="{{index}} " bindtap="handleDeleteProduct ">删除</view>
+ </view>
+ </view>
+</view>
